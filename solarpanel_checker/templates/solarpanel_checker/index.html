@@ -1,0 +1,17 @@
+<!-- solarpanel_checker/templates/solarpanel_checker/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solar Panel Checker</title>
+</head>
+<body>
+    <h1>Welcome to the Solar Panel Checker</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <button type="submit">Upload and Predict</button>
+    </form>
+    
+</body>
+</html>
